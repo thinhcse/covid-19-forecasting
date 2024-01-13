@@ -10,7 +10,7 @@ The COVID-19 forecasting model used here is similar to the one studied the paper
    ```
    pip install mxnet-cu112
    ```
-   On other OS, please read [https://mxnet.apache.org/versions/1.9.1/get_started?] for more information.
+   On other OS, please reference to [https://mxnet.apache.org/versions/1.9.1/get_started?] for more information.
 3. Run ```main.py``` with flag ```--train``` if the model needs to be re-trained. Otherwise, just simply run:
    ```
    python main.py
