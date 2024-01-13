@@ -1,0 +1,19 @@
+model:
+  window_size: 7
+
+train:
+  optim_method: "adam"
+  learning_rate: 0.01
+  num_epoch: 100
+  batch_size: 1
+  train_test_split: [0.7, 0.15, 0.15]
+
+pretrain: "pretrain/model.params"
+
+data:
+  infectious_data_path: "data/time_series_covid19_confirmed_global.csv"
+  deceased_data_path: "data/time_series_covid19_deaths_global.csv"
+  recovered_data_path: "data/time_series_covid19_recovered_global.csv"
+  select_country: "Italy"
+  select_country_population: 60000000
+
