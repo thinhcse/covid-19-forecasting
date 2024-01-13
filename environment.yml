@@ -2,12 +2,12 @@ name: covid-19-forecasting
 channels:
   - defaults
 dependencies:
-  - mxnet=1.9.1
-  - numpy=1.23.1
-  - pandas=2.1.4
-  - pip=23.3.1
-  - plotly=5.9.0
   - python=3.10.13
+  - pip=23.3.1
   - pip:
+      - numpy==1.23.5
+      - mxnet==1.9.1
+      - pandas==2.1.4
+      - plotly==5.9.0
       - openpyxl==3.1.2
       - pyyaml==6.0.1
