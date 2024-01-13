@@ -1,4 +1,4 @@
-The COVID-19 forecasting model used here is similar to the one studied the paper [https://www.nature.com/articles/s41598-022-11693-9]. To run the forecasting please follow the steps below.
+The COVID-19 forecasting model used here is simplified from the one studied the paper [https://www.nature.com/articles/s41598-022-11693-9]. To run the forecasting please follow the steps below.
 
 1. Install Anaconda environment using yalm file for running on CPU:
    ```
