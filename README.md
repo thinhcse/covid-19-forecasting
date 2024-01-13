@@ -10,4 +10,4 @@ The COVID-19 forecasting model used here is similar to the one studied the paper
    ```
 3. Example of COVID-19 forecasting in Italy:
    ![Alt text](img/infected.png)![Alt text](img/deceased.png)![Alt text](img/recovered.png)
-5. Modify the configuration file "configs/config.yaml" if you want to forecast the COVID-19 disease for other countries.
+5. Modify the configuration file "configs/config.yaml" if you want to forecast the COVID-19 disease for other countries or for training settings.
