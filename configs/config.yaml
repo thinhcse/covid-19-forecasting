@@ -1,12 +1,12 @@
 model:
-  window_size: 7
+  window_size: 10
 
 train:
   optim_method: "adam"
-  learning_rate: 0.01
-  num_epoch: 100
+  learning_rate: 0.001
+  num_epoch: 1000
   batch_size: 1
-  train_test_split: [0.7, 0.15, 0.15]
+  train_test_split: [0.6, 0.1, 0.3]
 
 pretrain: "pretrain/model.params"
 

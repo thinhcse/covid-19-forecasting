@@ -20,8 +20,8 @@ def train(model, data_train_ld, data_val_ld, configs):
       for data, label in data_train_ld:
         
         with autograd.record():
-          output = model(data)
-          loss = l2loss(output, label)
+          output = model(data.as_in_context(device))
+          loss = l2loss(output, label.as_in_context(device))
         
         autograd.backward(loss)
         trainer.step(configs["train"]["batch_size"])
@@ -37,13 +37,14 @@ def train(model, data_train_ld, data_val_ld, configs):
     model.save_parameters(os.path.join(os.getcwd(), "pretrain", "model.params"))
 
 def test(model, data_test_ld, configs, time_stamps = None):
+    device = npx.gpu() if npx.num_gpus() > 0 else npx.cpu()
     mean_absolute_error = MAE()
     mean_absolute_error.reset()
     truths = []
     preds = []
     for data, label in data_test_ld:
-        predict = model(data)
-        truth = label
+        predict = model(data.as_in_context(device))
+        truth = label.as_in_context(device)
         preds.append(predict)
         truths.append(truth)
     mean_absolute_error.update(truths, preds)
