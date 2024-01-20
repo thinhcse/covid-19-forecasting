@@ -2,8 +2,8 @@ The COVID-19 forecasting model used here is simplified from the one studied the 
 
 1. Install Anaconda environment using yalm file for running on CPU:
    ```
-   conda update conda
    cd covid-19-forecasting
+   conda update conda
    conda env create -f environment.yml
    ```
    If you aim to run the forecasting on GPU, you need to install ```mxnet``` with CUDA support (CUDA version is 11.2 or lower otherwise you need to downgrade your current CUDA version to those versions or use CPU instead). On Linux OS, if CUDA version is 11.2 then run:
