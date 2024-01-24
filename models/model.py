@@ -1,7 +1,5 @@
 from mxnet.gluon import nn, rnn
 
-window_size = 7
-
 class encoder(nn.HybridBlock):
 
   def __init__(self):
